@@ -19,7 +19,7 @@ h1, h2 {
     background-color: #fff;
     display: flex;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    padding: 20px;
+    padding: 20px 0 20px 0;
     width: 100%;
     justify-content: space-evenly;
     align-items: center;
