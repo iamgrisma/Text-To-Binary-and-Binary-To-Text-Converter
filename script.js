@@ -8,5 +8,4 @@ function binaryToText() {
   const text = inputBinary.split(' ').map(binary => String.fromCharCode(parseInt(binary, 2))).join('');
   document.getElementById("inputText").value = text;
 }
-
-  
+document.getElementById("copyright-year").textContent = new Date().getFullYear();
