@@ -1,6 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
+<html lang="en"><head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Text to Binary Converter</title>
@@ -8,25 +6,28 @@
 </head>
 <body>
   <header>
-    <h1>Text to Binary Converter</h1>
+    <h1>Text to Binary And Binary to Text Converter</h1>
   </header>
-  <main>
+  <main id="main">
+     <div class="converter">
     <section>
       <h2>Convert Text to Binary</h2>
-      <div class="converter">
-        <textarea id="inputText" class="input" oninput="textToBinary()" placeholder="Enter the text here..."></textarea>
+        <div id="text-bin">
+        <textarea id="inputText" class="input" oninput="textToBinary()" placeholder="Enter the text here..." spellcheck="false"></textarea>
       </div>
     </section>
     <section>
       <h2>Convert Binary to Text</h2>
-      <div class="converter">
-        <textarea id="inputBinary" class="input" oninput="binaryToText()" placeholder="Enter Binary Code here..."></textarea>
+        <div id="bin-text">
+        <textarea id="inputBinary" class="input" oninput="binaryToText()" placeholder="Enter Binary Code here..." spellcheck="false"></textarea>
       </div>
-    </section>
+      </section></div>
+    
   </main>
   <footer>
-    <p>&copy; <span id="copyright-year"></span> Text2Binary Converter. All rights reserved.</p>
+    <p>© <span id="copyright-year"></span> Text2Binary Converter. All rights reserved.</p>
   </footer>
 <script src="script.js"></script>
+
 </body>
 </html>
