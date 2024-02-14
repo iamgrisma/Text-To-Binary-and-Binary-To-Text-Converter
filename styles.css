@@ -30,8 +30,13 @@ h1, h2 {
   width: 45%;
 }
 
-.input {
-  width: calc(100% - 40px);
+.input-output {
+  display: flex;
+}
+
+.input,
+.output {
+  width: 95%;
   height: 150px;
   box-sizing: border-box;
   resize: none;
@@ -41,6 +46,10 @@ h1, h2 {
   padding: 10px;
   font-size: 16px;
   margin: 10px 0;
+}
+
+.output {
+  margin-left: 10px;
 }
 
 footer {
