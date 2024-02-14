@@ -3,29 +3,30 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Binanry Code Converter - A realtime converter for text to binary and binary to text conversion</title>
-<style>
-.input {
-  width: 100%;
-  height: 150px;
-  box-sizing: border-box;
-  resize: none;
-  overflow: auto;
-}
-</style>
+<title>Text to Binary Converter</title>
+<link rel="stylesheet" href="styles.css">
 </head>
-<body>  
+<body>
+  <header>
     <h1>Text to Binary Converter</h1>
-    <div>
-      <label for="inputText">Enter Text that you want to convert into binary code:</label>
-      <textarea class="input" id="inputText" oninput="textToBinary()" placeholder="Enter the text here..."></textarea>
-    </div>
-    <br>
-    <h2>Binary Codes to Text Converter</h2>
-    <div>
-      <label for="inputBinary">Enter your Binary Code to convert into human readable text:</label>
-      <textarea class="input" id="inputBinary" oninput="binaryToText()" placeholder="Enter Binary Code here..."></textarea>
-    </div>
-    <script src="script.js"></script>
+  </header>
+  <main>
+    <section>
+      <h2>Convert Text to Binary</h2>
+      <div class="converter">
+        <textarea id="inputText" class="input" oninput="textToBinary()" placeholder="Enter the text here..."></textarea>
+      </div>
+    </section>
+    <section>
+      <h2>Convert Binary to Text</h2>
+      <div class="converter">
+        <textarea id="inputBinary" class="input" oninput="binaryToText()" placeholder="Enter Binary Code here..."></textarea>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; <span id="copyright-year"></span> Text2Binary Converter. All rights reserved.</p>
+  </footer>
+<script src="script.js"></script>
 </body>
 </html>
